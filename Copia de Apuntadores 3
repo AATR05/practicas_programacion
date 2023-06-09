@@ -1,0 +1,17 @@
+#include <stdio.h> 
+
+#define TAMANO_ARREGLO 5
+
+int main () {
+
+    int v[10];
+    int i, *p;
+
+    for (i=0; i < 10; i++) v[i] = i;
+
+    for (i=0; i < 10; i++) printf ("\n%d",v[i]);
+    p = v;
+    for (i=0; i < 10; i++) printf ("\n%d", *p++);
+
+    return 0;
+}
